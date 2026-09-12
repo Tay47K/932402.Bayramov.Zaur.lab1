@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>О себе</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FDEBF3;
+      color: #2C2C2C;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #F7C9DE;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #C2185B;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+    main { flex: 3; }
+    aside {
+      flex: 1;
+      background-color: #FADDEB;
+      padding: 15px;
+      border-radius: 8px;
+      height: fit-content;
+    }
+    section, .avatar-block { margin-bottom: 25px; }
+    h2 {
+      color: #C2185B;
+      border-bottom: 2px solid #E85D9E;
+      display: inline-block;
+    }
+    .avatar-block { text-align: center; }
+    .avatar-block img {
+      border-radius: 50%;
+      border: 3px solid #E85D9E;
+    }
+    .contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+      padding: 8px;
+      margin: 6px 0;
+      border: 1px solid #E85D9E;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      background-color: #E85D9E;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .contact-form button:hover { background-color: #C2185B; }
+    footer {
+      text-align: center;
+      background-color: #F7C9DE;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Имя Фамилия</h1>
+    <p>Дизайнер и визуализатор</p>
+  </header>
+
+  <div class="container">
+
+    <main>
+      <section>
+        <h2>Навыки</h2>
+        <ul>
+          <li>Работа с макетами в Figma</li>
+          <li>Понимание типографики</li>
+          <li>Цветовая теория</li>
+          <li>Работа с векторной графикой (Illustrator)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Проекты</h2>
+        <ol>
+          <li>Логотип для кофейни "Аромат"</li>
+          <li>Дизайн интерфейса мобильного приложения</li>
+          <li>Плакат для городского фестиваля</li>
+          <li>Редизайн сайта-портфолио</li>
+        </ol>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Любимые технологии</h2>
+      <p>Figma, Adobe Illustrator, Photoshop</p>
+      <h2>Любимый стиль</h2>
+      <p>Минимализм</p>
+    </aside>
+
+  </div>
+
+  <div class="avatar-block">
+    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='200'%3E%3Crect%20width='200'%20height='200'%20fill='%23E85D9E'/%3E%3Ctext%20x='50%25'%20y='50%25'%20fill='white'%20font-size='20'%20text-anchor='middle'%20dominant-baseline='middle'%3E%D0%A4%D0%BE%D1%82%D0%BE%3C/text%3E%3C/svg%3E" alt="Фото профиля" width="200" height="200">
+  </div>
+
+  <section class="contact-form">
+    <h2>Связаться со мной</h2>
+    <form>
+      <input type="text" name="name" placeholder="Имя"><br>
+      <input type="email" name="email" placeholder="Email"><br>
+      <textarea name="message" placeholder="Сообщение"></textarea><br>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Имя Фамилия</p>
+  </footer>
+
+</body>
+</html>
